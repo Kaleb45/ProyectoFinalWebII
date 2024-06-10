@@ -31,7 +31,7 @@ function Footer() {
 
                 <div className="footer-block-column">
                     <h4><a href="#sobre-nosotros"><Link to="/sobre-nosotros">Sobre Nosotros</Link></a></h4>
-                    <a href="#nuestras-librerias">Nuestras Librerías</a>
+                    <a href="#nuestras-librerias"><Link to="/bookstores">Nuestras Librerías</Link></a>
                 </div>
 
                 <div className="footer-block-column">
