@@ -1,3 +1,5 @@
+// David Kaleb Real Haro 20300663 8D1
+
 // src/components/Novedades.js
 import React, { useEffect, useState } from 'react';
 import { getBooks } from '../firestore';
