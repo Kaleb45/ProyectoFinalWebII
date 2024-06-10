@@ -24,8 +24,8 @@ function Footer() {
                             </a>
                     </div>
                     <div className="auth-links">
-                        <a href="#iniciar-sesion">Iniciar Sesión</a>
-                        <a href="#crear-cuenta">Crear una cuenta</a>
+                        <a href="#iniciar-sesion"><Link to="/account">Iniciar Sesión</Link></a>
+                        <a href="#crear-cuenta"><Link to="/account">Crear cuenta</Link></a>
                     </div>
                 </div>
 

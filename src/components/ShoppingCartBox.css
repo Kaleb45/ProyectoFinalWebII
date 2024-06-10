@@ -1,0 +1,64 @@
+/* src/components/ShoppingCartBox.css */
+.shopping-cart-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
+
+  .cart-table input {
+    width: 50px;
+  }
+  
+  .book-image {
+    max-width: 100px;
+  }
+  
+  .select-container {
+    margin-top: 20px;
+  }
+  
+  .select-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .select-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .update-button,
+  .delete-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .update-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+  }
+  

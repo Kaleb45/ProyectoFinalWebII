@@ -35,6 +35,7 @@
     font-size: 20px;
     cursor: pointer;
     position: relative;
+    color: #000;
 }
 
 .dropdown {

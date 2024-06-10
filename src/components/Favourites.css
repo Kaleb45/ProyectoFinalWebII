@@ -1,0 +1,16 @@
+/* src/components/Favourites.css */
+.favourites {
+    padding: 20px;
+}
+
+.favourites h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favourites-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
