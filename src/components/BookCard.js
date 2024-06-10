@@ -34,8 +34,12 @@ function BookCard({ book }) {
         }
     };
 
+    const handleBookClick = () => {
+        navigate(`/book/${book.id}`);
+    };
+
     return (
-        <div className="book-card">
+        <div className="book-card" onClick={handleBookClick}>
             <img src={book.image} alt={book.title} className="book-image" />
             <h3>{book.title}</h3>
             {book.editorial !== "N/A" && <p>{book.editorial}</p>}

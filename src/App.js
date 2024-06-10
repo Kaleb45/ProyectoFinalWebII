@@ -15,6 +15,8 @@ import Account from './components/Account';
 import Favourites from './components/Favourites';
 import ShoppingCart from './components/ShoppingCart';
 import BookstoresPage from './components/BookstoresPage';
+import SearchResultsPage from './components/SearchResultsPage';
+import BookDetailsPage from './components/BookDetailsPage';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
               <Route path="/favourites" element={<Favourites />} />
               <Route path="/shopping-cart" element={<ShoppingCart />} />
               <Route path="/bookstores" element={<BookstoresPage />} />
+              <Route path="/search/:term" element={<SearchResultsPage />} />
+              <Route path="/book/:id" element={<BookDetailsPage />} />
             </Routes>
           </main>
           <Footer />

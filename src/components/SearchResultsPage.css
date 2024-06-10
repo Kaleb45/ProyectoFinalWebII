@@ -1,0 +1,17 @@
+/* src/components/Novedades.css */
+.search-container {
+    max-height: fit-content; 
+    overflow-y: auto;
+}
+
+.search-results {
+    padding: 20px;
+    text-align: center;
+}
+
+.search-books {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: center;
+}

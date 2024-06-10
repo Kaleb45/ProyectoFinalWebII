@@ -1,5 +1,4 @@
-// src/components/Header.js
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './images/logo.png';
 import { AuthContext } from '../context/AuthContext';
@@ -10,6 +9,7 @@ import './Header.css';
 function Header() {
     const { user, favouriteCount, cartCount } = useContext(AuthContext);
     const navigate = useNavigate();
+    const [searchTerm, setSearchTerm] = useState('');
 
     const handleSignOut = async () => {
         try {
@@ -35,13 +35,30 @@ function Header() {
         }
     };
 
+    const handleSearchChange = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+    const handleSearchSubmit = (event) => {
+        event.preventDefault();
+        navigate(`/search/${searchTerm}`);
+    };
+
     return (
         <header className="header">
             <div className="header-left">
                 <img src={logo} alt="Logo" className="logo" />
             </div>
             <div className="header-center">
-                <input type="text" placeholder="Buscar libros..." className="search-bar" />
+                <form onSubmit={handleSearchSubmit}>
+                    <input
+                        type="text"
+                        placeholder="Buscar libros..."
+                        className="search-bar"
+                        value={searchTerm}
+                        onChange={handleSearchChange}
+                    />
+                </form>
             </div>
             <div className="header-right">
                 <button className="icon-button" onClick={handleFavouritesClick}>❤️ {favouriteCount}</button>
