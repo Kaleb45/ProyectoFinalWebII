@@ -1,0 +1,19 @@
+/* src/components/Novedades.css */
+.novedades-container {
+    max-height: fit-content; 
+    overflow-y: auto;
+}
+
+.novedades,
+.libros-para-todos {
+    padding: 20px;
+    text-align: center;
+}
+
+.novedades-books,
+.libros-para-todos-books {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: center;
+}

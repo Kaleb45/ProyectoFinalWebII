@@ -1,0 +1,29 @@
+/* src/components/Ayuda.css */
+
+.ayuda-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ayuda-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ayuda-section {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ayuda-section h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.ayuda-section p {
+    text-align: justify;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}

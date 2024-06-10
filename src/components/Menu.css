@@ -1,0 +1,83 @@
+/* src/components/Menu.css */
+.menu-container {
+    position: fixed;
+    top: 100px; /* Ajusta según la altura del header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1px 0;
+}
+
+.menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-link-span {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    background-color: #444;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 600px; /* Adjust width as necessary */
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-menu .dropdown-column {
+    margin-right: 20px;
+}
+
+.dropdown-menu .dropdown-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu .dropdown-column ul li span {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-column ul li span:hover {
+    text-decoration: underline;
+}
+
+.menu-item:hover .dropdown-menu {
+    display: flex;
+}
